@@ -1,6 +1,6 @@
 const addTodo = (todos, newTodo) => [
   { name: newTodo, completed: false },
-  ...todos,
+  ...todos.filter(t => t.name !== newTodo),
 ];
 
 const markTodoAsComplete = (todos, todoIdx) => todos.map((todo, idx) => {
