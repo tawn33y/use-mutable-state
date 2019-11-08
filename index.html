@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="assets/css/styles.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <div class="todos-container">
+      <h2>
+        <span>Todos</span>
+        (<span id="count-todos">0/0</span>)
+      </h2>
+    
+      <form onsubmit="onAddTodo(event)">
+        <input type="text" placeholder="Type todo..." id="new-todo" />
+        <button type="submit">Add todo</button>
+      </form>
+    
+      <ul id="todos"></ul>
+    </div>
+
+    <script type="text/javascript" src="assets/js/scripts/htmlHelpers.js"></script>
+    <script type="text/javascript" src="assets/js/scripts/state.js"></script>
+    <script type="text/javascript" src="assets/js/scripts/todoHelpers.js"></script>
+
+    <!-- <script type="text/javascript" src="assets/js/scriptNotUsingState.js"></script> -->
+    <script type="text/javascript" src="assets/js/scriptUsingState.js"></script>
+  </body>
+</html>
