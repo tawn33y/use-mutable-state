@@ -6,10 +6,6 @@ It is similar to React's `useState`, and can be used to achieve a uni-directiona
 
 It is inspired by Haskell's `IORef` and `Vault`.
 
-## Requirements
-
-- Node v12+
-
 ## Install
 
 ```bash
