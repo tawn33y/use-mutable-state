@@ -1,6 +1,6 @@
-# mutable.js
+# mutablestate.js
 
-mutable.js is a _browser/node_ util that provides an environment for safely mutating JS/TS variables. It allows you to define all your variables as constants, i.e. `const` instead of `let`, hence highly encouraging immutability.
+mutablestate.js is a _browser/node_ util that provides an environment for safely mutating JS/TS variables. It allows you to define all your variables as constants, i.e. `const` instead of `let`, hence highly encouraging immutability.
 
 It is similar to React's `useState`, and can be used to achieve a uni-directional data flow in an application.
 
@@ -13,13 +13,13 @@ It is inspired by Haskell's `IORef` and `Vault`.
 ## Install
 
 ```bash
-npm install mutable.js
+npm install mutablestate.js
 ```
 
 ## Example usage (JS)
 
 ```js
-import { createMutableState } from 'mutable.js';
+import { createMutableState } from 'mutablestate.js';
 
 const todosMutable = createMutableState([]);
 
