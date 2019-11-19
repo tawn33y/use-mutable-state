@@ -3,7 +3,7 @@ const todosState = useState([
   { name: 'Read a book', completed: true },
 ]);
 
-todosState.onChange(todos => {
+todosState.onChange((todos) => {
   renderTodos(todos);
 });
 

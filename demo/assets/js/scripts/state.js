@@ -3,9 +3,9 @@ const useState = (initialValue) => {
   let $cb = () => {};
 
   return {
-    onChange: cb => $cb = cb,
+    onChange: (cb) => $cb = cb,
     get: () => value,
-    set: newValue => {
+    set: (newValue) => {
       value = newValue;
       $cb(value);
     },

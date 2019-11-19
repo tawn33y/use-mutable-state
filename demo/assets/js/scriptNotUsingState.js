@@ -1,11 +1,11 @@
 let todos = [
   { name: 'Go shopping', completed: false },
-  { name: 'Read a book', completed: true }
+  { name: 'Read a book', completed: true },
 ];
 
 const onAddTodo = (e) => {
   const newTodo = handleSubmit(e);
-  
+
   if (newTodo) {
     todos = addTodo(todos, newTodo);
     renderTodos(todos);
