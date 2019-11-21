@@ -1,7 +1,7 @@
 {
   "name": "mutablestate.js",
-  "version": "0.2.4",
-  "description": "A mutable state manager for JS",
+  "version": "0.2.5",
+  "description": "A browser/node util for safely mutating the state of values or objects.",
   "main": "dist/index.js",
   "scripts": {
     "start": "npm-run-all clean build --parallel watch:build watch:server --print-label",
@@ -33,7 +33,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/tawn33y/state.js.git"
+    "url": "git+https://github.com/tawn33y/mutablestate.js.git"
   },
   "keywords": [
     "mutable",
@@ -44,7 +44,7 @@
   "author": "K Tony <tawn33y@gmail.com> (https://twitter.com/tawn33y)",
   "license": "GPL-3.0",
   "bugs": {
-    "url": "https://github.com/tawn33y/state.js/issues"
+    "url": "https://github.com/tawn33y/mutablestate.js/issues"
   },
-  "homepage": "https://github.com/tawn33y/state.js"
+  "homepage": "https://github.com/tawn33y/mutablestate.js"
 }
