@@ -1,6 +1,6 @@
 {
   "name": "mutablestate.js",
-  "version": "0.2.5",
+  "version": "0.2.6",
   "description": "A browser/node util for safely mutating the state of values or objects.",
   "main": "dist/index.js",
   "scripts": {
