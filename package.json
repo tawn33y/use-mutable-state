@@ -1,6 +1,6 @@
 {
-  "name": "mutablestate.js",
-  "version": "0.2.1",
+  "name": "mutable-state",
+  "version": "0.2.2",
   "description": "A mutable state manager for JS",
   "main": "dist/index.js",
   "scripts": {
