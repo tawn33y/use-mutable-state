@@ -1,6 +1,6 @@
 {
-  "name": "mutable-state",
-  "version": "0.2.2",
+  "name": "mutablestate",
+  "version": "0.2.3",
   "description": "A mutable state manager for JS",
   "main": "dist/index.js",
   "scripts": {
@@ -10,11 +10,12 @@
     "watch:build": "tsc --watch",
     "watch:server": "nodemon './dist/index.js' --watch './dist'",
     "eslint": "eslint --ext .js,.ts ./",
-    "pre-commit-message": "echo 'Please wait, running pre-commit checks...' && exit 0"
+    "pre-commit-message": "echo 'Please wait, running pre-commit checks...' && exit 0",
+    "test": "echo \"No tests specified\" && exit 0"
   },
   "husky": {
     "hooks": {
-      "pre-commit": "npm run pre-commit-message && npm run eslint"
+      "pre-commit": "npm run pre-commit-message && npm run eslint && npm test"
     }
   },
   "devDependencies": {

@@ -1,19 +1,19 @@
-# mutable-state
+# mutablestate
 
-mutable-state is a _browser/node_ util for safely mutating the state of values or objects.
+mutablestate is a _browser/node_ util for safely mutating the state of values or objects.
 
 In the Functional Programming world, we create values or objects by initializing them. Then we use them, but we do not change their values or their state. If we need, we create a new one, but we do not modify the existing object's state.
 
 It goes without saying, however, that in a real world application, one needs to change the state. But how do we achieve this whilst maintaining immutability? In Haskell, one can achieve something this by using `IORef`, `Vault`, or even an `Atom`. In React, one can use `useState`. But how about in pure Javascript? All we have is `const` and `let`.
 
-`mutable-state` is a module aimed at addressing this by providing an environment to safely mutate the state of values. It allows you to define all your values as constants, i.e. `const` instead of `let`, hence highly encouraging immutability.
+`mutablestate` is a module aimed at addressing this by providing an environment to safely mutate the state of values. It allows you to define all your values as constants, i.e. `const` instead of `let`, hence highly encouraging immutability.
 
 At its core, the package is `less than 20 lines of code`. Based on your application design, you can use it to easily create a uni-directional or bi-directional data flow. You can also achieve `time travel`, where you are able to follow a value as it changes over time.
 
 ## Install
 
 ```bash
-npm install mutable-state
+npm install mutablestate
 ```
 
 ## Example usage (JS)
@@ -40,8 +40,8 @@ const onDeleteTodo = todo => {
 };
 
 
-// Method B: using mutable-state
-import { createMutableState } from 'mutable-state';
+// Method B: using mutablestate
+import { createMutableState } from 'mutablestate';
 
 const todosMutable = createMutableState([]);
 
