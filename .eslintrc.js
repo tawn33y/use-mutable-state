@@ -1,7 +1,9 @@
 module.exports = {
   env: {
+    es2021: true,
     es6: true,
     node: true,
+    jest: true,
   },
   extends: [
     'airbnb-typescript/base',
@@ -14,13 +16,12 @@ module.exports = {
   parserOptions: {
     ecmaVersion: 2018,
     sourceType: 'module',
+    project: './tsconfig.json',
   },
   plugins: [
     '@typescript-eslint',
   ],
   rules: {
-    indent: [2],
-    quotes: [2, 'single', { 'avoidEscape': true }],
     'import/prefer-default-export': 'off',
   },
 };
