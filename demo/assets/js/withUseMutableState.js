@@ -1,4 +1,4 @@
-const todosState = useState([
+const todosState = useMutableState([
   { name: 'Go shopping', completed: false },
   { name: 'Read a book', completed: true },
 ]);
